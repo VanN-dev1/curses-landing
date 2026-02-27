@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>DIGITAL SPRINT — інтенсивний курс підготовки fullstack-розробників</title>
+  <meta name="description"
+    content="DIGITAL SPRINT — суперинтенсивна 6-місячна програма підготовки fullstack-розробників із фокусом на практику, реальні проєкти та менторський супровід." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="DIGITAL SPRINT — курс fullstack-розробника за 6 місяців" />
+  <meta property="og:description"
+    content="Fullstack-програма з реальними проєктами, живими заняттями, код-рев'ю та командною розробкою." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://digitalsprint.example.com" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DIGITAL SPRINT — курс fullstack-розробника" />
+  <meta name="twitter:description"
+    content="6 місяців системної роботи, 8+ проєктів у портфоліо, менторська підтримка щодня." />
+
+  <link rel="canonical" href="https://digitalsprint.example.com" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+
+<body>
+  <div class="page">
+    <!-- Header -->
+    <header class="site-header">
+      <div class="site-header-inner container-root">
+        <a href="#hero" class="logo">
+          <div class="logo-mark">
+            DS
+          </div>
+          <div class="logo-text">
+            <span class="logo-title">
+              DIGITAL SPRINT
+            </span>
+            <span class="logo-subtitle">
+              Fullstack-курс розробника
+            </span>
+          </div>
+        </a>
+
+        <nav class="main-nav" aria-label="Основна навігація">
+          <a href="#program" class="nav-link">Програма</a>
+          <a href="#fullstack" class="nav-link">Хто такий Fullstack</a>
+          <a href="#method" class="nav-link">Методика</a>
+          <a href="#price" class="nav-link">Ціна</a>
+          <a href="#contacts" class="nav-link">Контакти</a>
+        </nav>
+
+        <nav class="mobile-nav">
+          <a href="#program">Програма</a>
+          <a href="#fullstack">Хто такий Fullstack</a>
+          <a href="#method">Методика</a>
+          <a href="#price">Ціна</a>
+          <a href="#contacts">Контакти</a>
+        </nav>
+
+        <div class="header-cta">
+          <button class="btn-primary header-cta-solid" type="button" data-scroll-to="#cta">
+            Записатися
+          </button>
+          <button class="burger" aria-label="Відкрити меню">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section id="hero" class="hero-section">
+        <div class="container-root hero-inner">
+          <div class="hero-grid">
+            <div class="fade-in-section">
+              <p class="hero-badge">
+                <span class="hero-badge-dot"></span>
+                Старт нового потоку через 30 днів
+              </p>
+
+              <div class="hero-heading">
+                <h1 class="hero-title">
+                  DIGITAL <span class="hero-title-accent">SPRINT</span>
+                </h1>
+                <p class="hero-subtitle">
+                  Готуємо fullstack-розробників за 6&nbsp;місяців
+                </p>
+                <p class="hero-description">
+                  Суперинтенсивна програма з повним зануренням у практику,
+                  живими заняттями, код-рев&rsquo;ю та реальними командними проєктами.
+                </p>
+              </div>
+
+              <div class="hero-actions">
+                <button class="btn-primary" type="button" data-scroll-to="#contacts">
+                  Записатися на консультацію
+                </button>
+                <p class="hero-actions-note">
+                  Безкоштовна 30-хвилинна зустріч, щоб зрозуміти, чи підходить вам формат.
+                </p>
+              </div>
+
+              <dl class="hero-meta">
+                <div class="hero-meta-item">
+                  <dt>Тривалість</dt>
+                  <dd>6 місяців практики</dd>
+                </div>
+                <div class="hero-meta-item">
+                  <dt>Формат</dt>
+                  <dd>Онлайн + live-сесії</dd>
+                </div>
+                <div class="hero-meta-item">
+                  <dt>Рівень</dt>
+                  <dd>З нуля до job-ready</dd>
+                </div>
+                <div class="hero-meta-item">
+                  <dt>Портфоліо</dt>
+                  <dd>8+ реальних проєктів</dd>
+                </div>
+              </dl>
+            </div>
+
+            <!-- Code visual -->
+            <div class="fade-in-section">
+              <div class="hero-code-card" aria-hidden="true">
+                <div class="hero-code-header">
+                  <span class="hero-code-dot red"></span>
+                  <span class="hero-code-dot amber"></span>
+                  <span class="hero-code-dot green"></span>
+                  <span class="hero-code-filename">
+                    sprint/fullstack/roadmap.ts
+                  </span>
+                </div>
+
+                <div class="hero-code-body">
+                  <pre>
+<code>
+const stack = ['HTML', 'CSS', 'TypeScript', 'Node.js'];
+
+type SprintPhase = 'prep' | 'intensive' | 'practice';
+
+interface Module {
+  title: string;
+  weeks: number;
+  focus: string[];
+}
+
+const roadmap: Record&lt;SprintPhase, Module&gt; = {
+  prep: {
+    title: 'Online-підготовка з ментором',
+    weeks: 4,
+    focus: ['основи JS', 'Git', 'робочий процес']
+  },
+  intensive: {
+    title: 'Full-time занурення',
+    weeks: 14,
+    focus: ['frontend', 'backend', 'архітектура']
+  },
+  practice: {
+    title: 'Вечірня практика',
+    weeks: 6,
+    focus: ['командні проєкти', 'code review']
+  }
+};
+
+function startSprint() {
+  return roadmap.intensive.focus.includes('frontend')
+    &amp;&amp; roadmap.intensive.focus.includes('backend');
+}
+</code>
+</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Про програму -->
+      <section id="program" class="section-root">
+        <div class="container-root fade-in-section">
+          <div class="section-header">
+            <p class="section-eyebrow">Про програму</p>
+            <h2 class="section-title">
+              Digital Sprint — програма прискореної підготовки fullstack-інженерів
+            </h2>
+            <p class="section-subtitle">
+              Структурована інтенсивна програма, що поєднує живі заняття, менторський супровід
+              та командну розробку за процесами, близькими до роботи в технологічних компаніях.
+            </p>
+          </div>
+          <div class="grid gap-6 md:grid-cols-2 feature-list" data-feature-list>
+            <article class="feature-card">
+              <h3>6 місяців системної інтенсивної роботи</h3>
+              <p>
+                Від базових понять до production-рівня, без «води» — тільки те, що реально
+                використовується в індустрії.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>1 місяць онлайн-підготовки з ментором</h3>
+              <p>
+                Ви входите в інтенсив уже з впевненими базовими навичками HTML, CSS та JavaScript.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>3,5 місяця full-time занурення</h3>
+              <p>
+                Щоденні заняття, парне програмування, практичні спринти та контроль прогресу.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>1,5 місяця вечірньої практики</h3>
+              <p>
+                Доробка командних проєктів, шліфування портфоліо та підготовка до співбесід.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>8+ проєктів у портфоліо</h3>
+              <p>
+                Від landing-сторінок до повноцінних fullstack-додатків з авторизацією та API.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>Живі заняття й щоденний фідбек</h3>
+              <p>
+                Регулярні Q&amp;A, розбір коду, підтримка в чаті та персональні рекомендації від менторів.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>Парне програмування та code review</h3>
+              <p>
+                Ви вчитеся читати й покращувати чужий код — ключова навичка для роботи в команді.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>Командна розробка за реальними процесами</h3>
+              <p>
+                Git-flow, задачі в трекері, спринти, демо — як у продуктових компаніях та стартапах.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Хто такий Fullstack -->
+      <section id="fullstack" class="section-root fullstack-section">
+        <div
+          class="container-root grid gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] items-center fade-in-section">
+          <div class="space-y-5">
+            <p class="section-eyebrow">Хто такий Fullstack</p>
+            <h2 class="section-title">
+              Хто такий fullstack-розробник?
+            </h2>
+            <p class="section-subtitle">
+              Fullstack-інженер — універсальний IT-фахівець, який працює з frontend і backend.
+              Він здатен спроєктувати та реалізувати повноцінний веб-додаток — від інтерфейсу
+              до бази даних і деплою.
+            </p>
+            <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+              Спрос на таких спеціалістів стабільно перевищує пропозицію: компаніям потрібні
+              люди, які розуміють продукт цілісно, можуть спілкуватися з різними командами
+              та закривати вузькі місця як на боці клієнта, так і на боці сервера.
+            </p>
+          </div>
+
+          <div class="relative">
+            <div class="fullstack-card">
+              <div class="fullstack-title">
+                <span>FRONTEND</span>
+                <span>BACKEND</span>
+                <span>FULLSTACK</span>
+              </div>
+
+              <div class="fullstack-points">
+                <div class="fullstack-point">
+                  <span class="fullstack-point-bar"></span>
+                  <p>Розуміння повного циклу розробки: від ідеї до релізу.</p>
+                </div>
+                <div class="fullstack-point">
+                  <span class="fullstack-point-bar"></span>
+                  <p>Гнучкість у виборі задач та більша цінність для продукту.</p>
+                </div>
+                <div class="fullstack-point">
+                  <span class="fullstack-point-bar"></span>
+                  <p>Стійкість до змін ринку завдяки ширшому стеку навичок.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Методика -->
+      <section id="method" class="section-root">
+        <div class="container-root grid gap-10 lg:grid-cols-2 items-start fade-in-section">
+          <div class="space-y-4">
+            <p class="section-eyebrow">Методика</p>
+            <h2 class="section-title">Про методику Sprint</h2>
+            <p class="section-subtitle">
+              Ми поєднуємо інтенсивний формат, чітку структуру та постійний фідбек,
+              щоб максимально прискорити шлях від нуля до першої роботи.
+            </p>
+          </div>
+
+          <div class="space-y-6 text-sm sm:text-base text-slate-200">
+            <div class="space-y-2">
+              <h3 class="text-base sm:text-lg font-semibold text-slate-50">Що це?</h3>
+              <p class="text-slate-300 leading-relaxed">
+                Sprint-підхід — це формат повного занурення з акцентом на практику.
+                Кожен тиждень — це міні-спринт із конкретною ціллю, дедлайнами та результатом,
+                який можна показати в портфоліо.
+              </p>
+            </div>
+
+            <div class="space-y-2">
+              <h3 class="text-base sm:text-lg font-semibold text-slate-50">Чому це ефективно?</h3>
+              <p class="text-slate-300 leading-relaxed">
+                Висока щільність задач, постійна практика, командна робота й контроль прогресу
+                дозволяють швидко накопичувати досвід. Ви не «просто дивитеся уроки», а щодня
+                пишете код, отримуєте фідбек і покращуєте свої рішення.
+              </p>
+            </div>
+
+            <div class="space-y-2">
+              <h3 class="text-base sm:text-lg font-semibold text-slate-50">Де це застосовується?</h3>
+              <p class="text-slate-300 leading-relaxed">
+                Такий підхід використовується в технологічних компаніях і стартапах: команди
+                працюють короткими ітераціями, швидко тестують гіпотези й регулярно
+                відправляють фічі в продакшн. Ми відтворюємо цей підхід у навчанні.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA / Ціна -->
+      <section id="price" class="section-root cta-section">
+        <div class="container-root fade-in-section">
+          <div id="cta" class="cta-card">
+            <div class="cta-grid">
+              <div class="space-y-4">
+                <p class="section-eyebrow text-emerald-100/90">Новий потік</p>
+                <h2 class="section-title text-slate-950">
+                  Старт нового потоку через 30 днів
+                </h2>
+                <p class="section-subtitle text-slate-900/90">
+                  Кількість місць обмежена — ми свідомо тримаємо невеликі групи,
+                  щоб зберігати якість фідбеку та менторського супроводу.
+                </p>
+              </div>
+
+              <div class="space-y-6">
+                <div class="cta-meta">
+                  <div class="cta-meta-row">
+                    <span class="cta-meta-label">Формат</span>
+                    <span class="cta-meta-value">Онлайн, live-заняття та практика в командах</span>
+                  </div>
+                  <div class="cta-meta-row">
+                    <span class="cta-meta-label">Тривалість</span>
+                    <span class="cta-meta-value">6 місяців (інтенсив + практика)</span>
+                  </div>
+                  <div class="cta-meta-row">
+                    <span class="cta-meta-label">Мова навчання</span>
+                    <span class="cta-meta-value">Українська</span>
+                  </div>
+                </div>
+
+                <div class="flex flex-wrap items-center gap-4">
+                  <button class="btn-primary btn-primary-on-light btn-margin btn-center" type="button"
+                    data-scroll-to="#contacts">
+                    Подати заявку
+                  </button>
+                  <p class="cta-note">
+                    Залиште заявку — ми зв&apos;яжемося з вами, розповімо про деталі
+                    та допоможемо оцінити ваш поточний рівень.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Контакти -->
+      <section id="contacts" class="section-root">
+        <div
+          class="container-root grid gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] items-start fade-in-section">
+          <div class="space-y-4">
+            <p class="section-eyebrow">Контакти</p>
+            <h2 class="section-title">
+              Залиште заявку — ми допоможемо скласти ваш план входу в IT
+            </h2>
+            <p class="section-subtitle">
+              Заповніть коротку форму, і ми зв&apos;яжемося з вами протягом одного робочого дня,
+              щоб відповісти на всі запитання та розповісти про формат детальніше.
+            </p>
+          </div>
+
+          <div class="space-y-6">
+            <form class="grid gap-4 text-sm" aria-label="Форма заявки на курс DIGITAL SPRINT">
+              <div class="grid gap-2">
+                <label class="label_form" for="name">Ім&apos;я</label>
+                <input id="name" type="text" name="name" autocomplete="name" class="input-field"
+                  placeholder="Як до вас звертатися?" required />
+              </div>
+              <div class="grid gap-2">
+                <label class="label_form" for="email">Email</label>
+                <input id="email" type="email" name="email" autocomplete="email" class="input-field"
+                  placeholder="name@example.com" required />
+              </div>
+              <div class="grid gap-2">
+                <label class="label_form" for="phone">Телефон</label>
+                <input id="phone" type="tel" name="phone" autocomplete="tel" class="input-field"
+                  placeholder="+380 __ ___ __ __" />
+              </div>
+              <div class="grid gap-2">
+                <label class="label_form" for="comment">Коротко про ваш досвід</label>
+                <textarea id="comment" name="comment" rows="3" class="input-field"
+                  placeholder="Рівень, з яким ви заходите: з нуля, є базові знання, вже пишете pet-проєкти…"></textarea>
+              </div>
+
+              <button class="btn-primary btn-margin btn-submit w-full sm:w-auto" type="submit">
+                Надіслати заявку
+              </button>
+
+              <p class="text-[11px] text-slate-400 leading-relaxed">
+                Натискаючи «Надіслати заявку», ви погоджуєтеся з умовами
+                <a href="policy.html"
+                  class="underline decoration-slate-500 hover:decoration-accent hover:text-accent transition-colors">
+                  політики конфіденційності
+                </a>.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" aria-label="Нижній колонтитул">
+      <div class="site-footer-inner">
+        <div class="footer-top">
+          <div class="space-y-1">
+            <p class="footer-brand-title">
+              DIGITAL SPRINT
+            </p>
+            <p class="footer-brand-subtitle">
+              Інтенсивна програма підготовки fullstack-розробників.
+            </p>
+          </div>
+
+          <div class="footer-contacts">
+            <a href="mailto:hello@digitalsprint.ua" class="footer-link">
+              hello@digitalsprint.ua
+            </a>
+            <span class="footer-contacts-separator">•</span>
+            <a href="tel:+380000000000" class="footer-link">
+              +380 (67) 768 88 99
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 DIGITAL SPRINT. Усі права захищені.</p>
+          <a id="privacy" href="policy.html" class="footer-privacy">
+            Політика конфіденційності
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
